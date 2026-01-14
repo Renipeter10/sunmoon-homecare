@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Sun Moon Home Care Nursing Services</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-title">Sun Moon Home Care Nursing Services</span>
+      <span class="logo-subtitle">15+ Years of Trusted Home Nursing</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" class="active">Admin</a>
+    </nav>
+  </header>
+
+  <main class="page-content admin-page">
+    <h1>Service Management (Admin)</h1>
+    <p class="admin-note">
+      This page lets you manage the list of services shown on the website. Changes are saved
+      in this browser only using local storage (suitable for demo / project use).
+    </p>
+
+    <section id="admin-login-section" class="admin-login-section">
+      <h2>Admin Login</h2>
+      <p>Enter the admin password to manage services.</p>
+      <div class="form-row">
+        <label for="admin-password">Password</label>
+        <input type="password" id="admin-password" />
+      </div>
+      <button id="admin-login-btn" class="btn-primary">Login</button>
+      <p id="admin-login-status" class="form-status" aria-live="polite"></p>
+    </section>
+
+    <section id="admin-panel" class="admin-panel hidden">
+      <h2>Service List</h2>
+      <table class="services-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Notes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="services-table-body">
+          <!-- Rows will be injected by JavaScript -->
+        </tbody>
+      </table>
+
+      <h2>Add / Edit Service</h2>
+      <form id="service-form">
+        <input type="hidden" id="service-id" />
+        <div class="form-row">
+          <label for="service-name">Name</label>
+          <input type="text" id="service-name" required />
+        </div>
+        <div class="form-row">
+          <label for="service-category">Category</label>
+          <input type="text" id="service-category" placeholder="e.g. Nursing, Physiotherapy, Lab, Equipment" />
+        </div>
+        <div class="form-row">
+          <label for="service-description">Description</label>
+          <textarea id="service-description" rows="2"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="service-notes">Notes / Price Info</label>
+          <input type="text" id="service-notes" />
+        </div>
+        <button type="submit" class="btn-primary">Save Service</button>
+        <button type="button" id="service-form-reset" class="btn-secondary">Clear Form</button>
+        <p id="service-form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>J.K. Illam, No.10, F2, 3rd Main Road (Pandiyan Street), East CIT Nagar, Chennai - 600 035.</p>
+    <p>&copy; <span id="year"></span> Sun Moon Home Care Nursing Services</p>
+  </footer>
+
+  <script src="js/services-data.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

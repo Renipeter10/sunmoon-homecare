@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Sun Moon Home Care Nursing Services</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-title">Sun Moon Home Care Nursing Services</span>
+      <span class="logo-subtitle">15+ Years of Trusted Home Nursing</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="page-content contact-page">
+    <h1>Contact Us</h1>
+
+    <section class="contact-details">
+      <h2>Sun Moon Home Care Nursing Services</h2>
+      <p>
+        J.K. Illam, No.10, F2, 3rd Main Road (Pandiyan Street),<br />
+        East CIT Nagar, Chennai - 600 035.
+      </p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+919344253034">+91 93442 53034</a>,
+        <a href="tel:+919444149892">+91 94441 49892</a>,
+        <a href="tel:+919445168015">+91 94451 68015</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:sunmoon682004@gmail.com">sunmoon682004@gmail.com</a>
+      </p>
+      <p class="years-badge">15+ years of continuous home nursing service in Chennai</p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Enquiry Form</h2>
+      <form id="enquiry-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-row">
+          <label for="service">Service Required</label>
+          <input type="text" id="service" name="service" placeholder="e.g. Staff nurse, lab test, physiotherapy" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Enquiry</button>
+        <p id="enquiry-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>J.K. Illam, No.10, F2, 3rd Main Road (Pandiyan Street), East CIT Nagar, Chennai - 600 035.</p>
+    <p>&copy; <span id="year"></span> Sun Moon Home Care Nursing Services</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
